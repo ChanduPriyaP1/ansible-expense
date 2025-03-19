@@ -15,7 +15,7 @@
       enabled: yes  
 
   - name: delete default nginx
-    ansible.builtin.filt:
+    ansible.builtin.file:
       path: /usr/share/nginx/html/
       state: abort
 
