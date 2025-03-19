@@ -1,12 +1,13 @@
 [db]
-52.90.196.118
+54.237.192.112
 
 [backend]
-44.211.176.225
+54.172.150.116
 
 [frontend]
-
+54.209.253.37
 
 [all:children]
 db
 backend
+frontend
