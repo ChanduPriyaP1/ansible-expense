@@ -4,6 +4,9 @@
 [backend]
 44.211.176.225
 
+[frontend]
+
+
 [all:children]
 db
 backend
