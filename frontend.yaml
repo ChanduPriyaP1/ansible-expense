@@ -17,7 +17,7 @@
   - name: delete default nginx
     ansible.builtin.file:
       path: /usr/share/nginx/html/
-      state: abort
+      state: absent
 
   - name: create html directory
     ansible.builtin.file:
