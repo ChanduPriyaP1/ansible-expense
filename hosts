@@ -1,5 +1,9 @@
 [db]
 52.90.196.118
 
+[backend]
+44.211.176.225
+
 [all:children]
 db
+backend
