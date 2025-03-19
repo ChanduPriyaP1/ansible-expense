@@ -20,9 +20,15 @@
       enabled: yes
 
   - name: checking mysql root setup 
-    #ansible.builtin.mysql_info:
+    #community.mysql.mysql_info:
     mysql_info:
       login_user: "{{user}}"
       login_password: "{{password}}"
       login_host: "{{host_name}}"
-      filter: version   
+      filter: version
+    ignore_error: yes
+    register: mysql_connection_output
+
+  - name: Print Output
+    debug:
+      msg: "LogIn OutPut is: {{mysql_connection_output}} "        
