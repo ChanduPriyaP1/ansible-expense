@@ -4,7 +4,7 @@
   vars:
     user: root
     password: ExpenseApp@1
-    host_name: 54.237.192.112
+    host_name: 172.31.83.95
 
   tasks:
     - name: Disable Nodejs 
